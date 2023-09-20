@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qr generator</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mooli&family=Pacifico&display=swap" rel="stylesheet">
+
+  
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="vr-line"></div>
+        <div class="main">
+            <h1 class="heading">Enter your Text or url</h1>
+            <input type="text" placeholder="Enter here" class="input" onclick required>
+            <button class="button" onclick="clicked()">Get your<img src="icons8-qr-code-50 (1).png" alt="" class="inqr"></button>
+            <!-- <img src="icons8-qr-code-64 (1).png" alt="" width="150px" height="150px" loading="lazy"> -->
+            <img id="progressive-image" src="https://api.qrserver.com/v1/create-qr-code/?data=https://www.youtube.com/watch?v=6qBdQzPnw4E&list=RDq2bIHdeMWp8&index=4&amp;&size=0x0" alt="Progressive Loading Image">
+
+        </div>
+        
+    </div>
+
+    <script src="index.js">
+       
+      </script>
+</body>
+</html>
